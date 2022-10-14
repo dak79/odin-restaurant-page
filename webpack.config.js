@@ -1,10 +1,11 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlMinimizerPlugin = require('html-minimizer-webpack-plugin');
 
 module.exports = {
     mode: 'development',
     entry: {
-        index: './src/index.js'
+        index: './src/index.js',
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -22,12 +23,24 @@ module.exports = {
                     presets: ['@babel/preset-env']
                 }
             }
+        },
+        {
+            test: /\.html$/i,
+            type: 'asset/resource'
         }
     ],
     plugin: [
         new HtmlWebpackPlugin({
             title: 'Restaurant Page',
-            template: './src/index.html'
+            template: './src/index.html',
+            //favicon: path,
+            minify: true
         })
-    ]
+    ],
+    optimization: {
+        minimize: true,
+        minimizer: [
+            new HtmlMinimizerPlugin()
+        ]
+    }
 }
