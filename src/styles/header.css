@@ -11,11 +11,11 @@
     background-color: transparent;
     border: none;
     font-size: 2.3rem;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway-900', sans-serif;
+    font-weight: 900;
+    color: var(--header-color);
 }
 
 .btn-menu:hover {
-    color: var(--pl);
+    color: var(--header-color-hover);
 }
-
-/* IMG MINIMIZER*/

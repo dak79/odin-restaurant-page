@@ -25,21 +25,28 @@ module.exports =  {
                     }
                 }
             },
-            // Imeges
+            // Images
             {
                 test: /\.(ico|svg|gif|png|jpg|jpeg)$/i,
-                type: 'asset/resource'
+                type: 'asset/resource',
+                generator: {
+                    filename: 'imgs/[hash][ext][query]'
+                }
             },
             // Fonts
             {
-                test: /\.(woff|woff2|eot|tff|otf)$/i,
-                type: 'asset/resource'
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'fonts/[hash][ext][query]'
+                }
             }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Restaurant Page',
+            favicon: './src/assets/imgs/favicon/soup-favicon.svg',
             template: './src/html/template.html',
             filename: './index.html',
             minify: true

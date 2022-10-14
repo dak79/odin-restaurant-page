@@ -10,12 +10,14 @@ module.exports = merge(common, {
         rules: [
             {
                 test: /\.css$/i,
-                use: [MiniCSSExtractPlugin.loader, 'css-loader'] 
+                use: [MiniCSSExtractPlugin.loader, 'css-loader'],
+                generator: {
+                    filename: 'css/[hash][ext][query]'
+                } 
             }
         ]
     },
     plugins: [
-
         new MiniCSSExtractPlugin({
             filename: '[name].css',
             chunkFilename: '[id].css'

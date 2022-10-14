@@ -16,7 +16,10 @@ module.exports = merge(common, {
             // CSS
             {
                 test: /\.css$/i,
-                use: ['style-loader', 'css-loader']
+                use: ['style-loader', 'css-loader'],
+                generator: {
+                    filename: 'style/[hash][ext][query]'
+                }
             }
         ]
     }
