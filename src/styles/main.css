@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/raleway-v28-latin-ext_latin-regular.eot');
+    src: local(''), 
+    url('../assets/fonts/raleway-v28-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), 
+    url('../assets/fonts/raleway-v28-latin-ext_latin-regular.woff2') format('woff2'),
+    url('../assets/fonts/raleway-v28-latin-ext_latin-regular.woff') format('woff'),
+    url('../assets/fonts/raleway-v28-latin-ext_latin-regular.ttf') format('truetype'),
+    url('../assets/fonts/raleway-v28-latin-ext_latin-regular.svg#Raleway') format('svg');
+}
+
+:root {
+    --pl: blue;
+}
+
+body {
+    height: 97vh;
+    width: 99vw;
+    background: no-repeat center/cover url('../assets/imgs/background/albert-vincent-wu-xyiJtO_4FvU-unsplash-web.jpg');
+}

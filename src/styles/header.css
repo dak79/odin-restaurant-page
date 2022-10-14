@@ -4,16 +4,18 @@
     list-style: none;
     justify-content: space-around;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 0.1rem;
 }
-
 /* Style */
 .btn-menu {
     background-color: transparent;
     border: none;
-    font-size: 2rem;
+    font-size: 2.3rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 .btn-menu:hover {
-    color: blue;
+    color: var(--pl);
 }
+
+/* IMG MINIMIZER*/
