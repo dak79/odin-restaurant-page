@@ -19,7 +19,6 @@ export const createList = (length, text) => {
         listBtn.textContent = text[i];
         listItem.appendChild(listBtn);
         list.appendChild(listItem);
-
     }
 
     return list
