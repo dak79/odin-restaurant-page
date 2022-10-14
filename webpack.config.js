@@ -12,6 +12,18 @@ module.exports = {
         clean: true
     },
     devtool: mode === 'development' ? 'inline-source-map' : false,
+    rules: [
+        {
+            test: /\.m?js$/i,
+            exclude: /node_modules/,
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    presets: ['@babel/preset-env']
+                }
+            }
+        }
+    ],
     plugin: [
         new HtmlWebpackPlugin({
             title: 'Restaurant Page',
