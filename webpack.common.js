@@ -27,13 +27,13 @@ module.exports =  {
             },
             // Imeges
             {
-                test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+                test: /\.(ico|svg|gif|png|jpg|jpeg)$/i,
                 type: 'asset/resource'
             },
-            // Fonts and svg
+            // Fonts
             {
-                test: /\.(woff(2)?|eot|tff|otf|svg)$/i,
-                type: 'asset/inline'
+                test: /\.(woff|woff2|eot|tff|otf)$/i,
+                type: 'asset/resource'
             }
         ]
     },

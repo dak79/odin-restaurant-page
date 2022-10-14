@@ -1,0 +1,19 @@
+/* Layout */
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Style */
+.btn-menu {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+}
+
+.btn-menu:hover {
+    color: blue;
+}
