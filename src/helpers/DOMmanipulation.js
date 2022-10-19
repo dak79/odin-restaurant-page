@@ -12,7 +12,7 @@ export const createList = (length, text) => {
         const listBtn = create('button');
         setAttributes(listBtn, {
             type: 'button',
-            id: text[i].replace(' ', '-').toLowerCase().trim(),
+            id: `btn-${text[i].replace(' ', '-').toLowerCase().trim()}`,
             class: 'btn-menu'
         });
 

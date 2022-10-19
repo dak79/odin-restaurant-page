@@ -1,5 +1,5 @@
-import content from '../helpers/hook.js';
+import '../styles/home.css';
 
-export default function homePage(){
-
+export default function homePage() {
+    console.log('HOME PAGE');
 }
