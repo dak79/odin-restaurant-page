@@ -1,0 +1,39 @@
+.food {
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 1rem 2rem;
+    margin: 1.5rem;
+    text-align: center;    
+}
+
+.soup-img {
+    width: 10rem;
+    height: 10rem;
+}
+
+div.first-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.first-line p {
+    font-size: 2rem;
+    padding: 1rem;
+    margin-right: 2rem; 
+}
+
+.currency {
+    font-size: 1rem;
+}
+
+div.second-line h3 {
+    text-align: start;
+}
+
+div.second-line p {
+    text-align: start;
+}

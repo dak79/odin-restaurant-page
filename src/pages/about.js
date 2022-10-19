@@ -1,4 +1,4 @@
-import { create, frozenGlass , cleanDisplay } from '../helpers/DOMmanipulation.js';
+import { createAndClass, frozenGlass , cleanDisplay } from '../helpers/DOMmanipulation.js';
 
 import '../styles/aboutUs.css';
 
@@ -9,8 +9,7 @@ export default function aboutUs() {
     frozenGlass();
     
     const glass = document.querySelector('#frozen-glass');
-    const aboutUsText = create('p');
-    aboutUsText.classList.add('about-us-text');
+    const aboutUsText = createAndClass('p', 'about-us-text');
 
     aboutUsText.textContent = `
     If you are in searching of an healty and tasty coup of soup in Hamburg, do not miss the chance to try our menu. We are cooking only selected vegetable, grown with Biological Agricolture from sustainable farming production. 
@@ -19,6 +18,9 @@ export default function aboutUs() {
     
     Our dishes are a modern new interpretation of tarditional ones and many vegetarian and vegan choice are on our menu.
     
-    If you prefere eating our soup at your place delivery service is available. `
+    If you prefere eating our soup at your place delivery service is available.
+    
+    Our prices are in Euro (€).
+    `
     glass.appendChild(aboutUsText);
 }
