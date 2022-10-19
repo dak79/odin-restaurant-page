@@ -81,7 +81,7 @@ export const headerButton = (name) => {
  */
 
 export const menuItems = (soup) => {
-    const soupImgSrc = require(`../assets/imgs/menu/img-soup-${soup.image}.jpg`);
+    const soupImgSrc = require(`../assets/imgs/menu/${soup.imageName}`);
     const soupItem = createAndClass('div', 'soup-items');
     const firstLine = createAndClass('div', 'first-line');
     const secondLine = createAndClass('div', 'second-line');

@@ -13,48 +13,49 @@ export default function menu() {
                 name: 'Tomato Soup',
                 price: '11',
                 currency: '€',
-                description: 'Fresh an juicy tomato with basil or rosemary.', image: 0
+                description: 'Fresh an juicy tomato with basil or rosemary.', imageName: 'img-soup-0.jpg'
             },
             {
                 name: 'Ginger Carrots Soup',
                 price: '12',
                 currency: '€',
-                description: 'Spicy ginger in a fresh and sweet carrots soup.', image: 1
+                description: 'Spicy ginger in a fresh and sweet carrots soup.',
+                imageName: 'img-soup-1.jpg'
             },
             {
                 name: 'Pumpkin Soup',
                 price: '14',
                 currency: '€',
                 description: 'Sweet pumpkin soup with aged cheese.',
-                image: 2
+                imageName: 'img-soup-2.jpg'
             },
             {
                 name: 'Mashroom Soup',
                 price: '16',
                 currency: '€',
                 description: 'Porcini and mixed mushrooms with fresh garlic and parsley.',
-                image: 3
+                imageName: 'img-soup-3.jpg'
             },
             {
                 name: 'Lentils Soup',
                 price: '11',
                 currency: '€',
                 description: 'Nutrient stoved lensils with spicy red hot chilly on request.',
-                image: 4
+                imageName: 'img-soup-4.jpg'
             },
             {
                 name: 'Mixed Vegetables Soup',
                 price: '13',
                 currency: '€',
                 description: 'Seasonal vegetables mixed: perfect for cold winters.',
-                image: 5
+                imageName: 'img-soup-5.jpg'
             },
             {
                 name: 'Meat Soup',
                 price: '18',
                 currency: '€',
                 description: 'Juicy meat in a spicy tomato soup.',
-                image: 6
+                imageName: 'img-soup-6.jpg'
             }
         ], menuItems, 'food');
 

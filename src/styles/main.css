@@ -40,6 +40,8 @@ body {
 
 main {
     display: flex;
+    height: 70vh;
+    width: 99vw;
     justify-content: center;
     align-items: center;
 }
