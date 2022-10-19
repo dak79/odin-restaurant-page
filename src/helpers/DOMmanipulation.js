@@ -1,4 +1,6 @@
+
 export const content = document.querySelector('#content');
+
 
 /**
  * 
@@ -39,11 +41,25 @@ export const createList = (menuTitles) => {
             type: 'button',
             id: `btn-${title.replace(' ', '-').toLowerCase().trim()}`,
             class: 'btn-menu'
-        })
+        });
+
         listBtn.textContent = title;
         listItem.appendChild(listBtn);
         list.appendChild(listItem);
     })
     
     return list
+}
+
+export const frozenGlass  = () => { 
+    const glass = create('div');
+    glass.setAttribute('id', 'frozen-glass');
+    const hook = document.querySelector('#display-page');
+    glass.classList.add('frozen');
+    hook.appendChild(glass);
+}
+
+export const cleanDisplay = () => {
+    const display = document.querySelector('#display-page');
+    display.replaceChildren();
 }
