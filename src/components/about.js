@@ -1,3 +1,4 @@
+import { hook } from '../helpers/hooks';
 import { cleanDisplay } from '../helpers/cleanDisplay';
 import { frozenGlass } from '../helpers/frozenGlass';
 import { createAndClass } from '../helpers/createAndClass';
@@ -11,7 +12,6 @@ export default function aboutUs() {
     frozenGlass();
     changeBgImg(aboutBgImage);
 
-    const glass = document.querySelector('#frozen-glass');
     const aboutUsText = createAndClass('p', 'about-us-text');
 
     aboutUsText.textContent = `
@@ -23,5 +23,5 @@ export default function aboutUs() {
     
     If you prefere eating our soup at your place delivery service is available.
     `;
-    glass.appendChild(aboutUsText);
+    hook('#frozen-glass').appendChild(aboutUsText);
 }

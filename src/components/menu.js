@@ -2,6 +2,7 @@ import { cleanDisplay } from '../helpers/cleanDisplay';
 import { frozenGlass } from '../helpers/frozenGlass';
 import { changeBgImg } from '../helpers/changeBg';
 import { createList, menuItems } from '../helpers/lists';
+import { hook } from '../helpers/hooks';
 import menuBgImage from '../assets/imgs/background/bg-menu.jpg'
 import '../styles/menu.css';
 
@@ -11,7 +12,6 @@ export default function menu() {
     frozenGlass();
     changeBgImg(menuBgImage);
     
-    const glass = document.querySelector('#frozen-glass');
     const soupOnMenu = createList(
         [
             {
@@ -64,5 +64,5 @@ export default function menu() {
             }
         ], menuItems, 'food');
 
-    glass.appendChild(soupOnMenu);
+    hook('#frozen-glass').appendChild(soupOnMenu);
 }
