@@ -36,3 +36,19 @@ As content tha page is around a Soup Restaurant which does not exist.
 * Put the contents of each ‘tab’ inside of its own module. 
 
 * Write the tab-switching logic inside of index.js. You should have event listeners for each tab that wipes out the current contents and then runs the correct ‘tab module’ to populate it again.
+
+## Credits
+* Backgrounds: 
+    * bg-home.jpg: Photo by [Albert Vincent Wu](https://unsplash.com/@albertvincentwu?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/garlic?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+    * bg-about.jpg: Photo by [Gabriel Gurrola](https://unsplash.com/@gabrielgurrola?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/healty-food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+    * bg-menu.jpg: Photo by [Lauren Mancke](https://unsplash.com/@laurenmancke?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/healty-food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+    * bg-contact.jpg: Photo by [Lindsay Moe](https://unsplash.com/@lindsaymoe?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/healty-food?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+
+* Dish on menu:
+    * img-soup-0.jpg: Photo by [Nathan Dumlao](https://unsplash.com/ja/@nate_dumlao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/tomato-soup?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+    * img-soup-1.jpg: Photo by [Sandie Clarke](https://unsplash.com/@honeypoppet?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/carrots-soup?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+    * img-soup-2.jpg: Photo by [Cala](https://unsplash.com/@calajay?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/pumpkin-soup?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+    * img-soup-3.jpg: Photo by [Green and Great](https://unsplash.com/@greenandgreatfood?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/lentil-soup?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+    * img-soup-4.jpg: Photo by [Rina Berg](https://unsplash.com/@rinaberg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/mashroom-soup?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+    * img-soup-5.jpg: Photo by [Gianluca Gerardi](https://unsplash.com/@foodography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/vegetable-soup?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
+    * img-soup-6.jpg: Photo by [Ting Tian](https://unsplash.com/@steven__chan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/zucchini-soup?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText).
