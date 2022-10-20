@@ -55,7 +55,7 @@ module.exports =  {
     plugins: [
         new HtmlWebpackPlugin({
             title: 'Restaurant Page',
-            template: './src/html/template.html',
+            template: './src/templates/template.html',
             filename: './index.html',
             minify: true
             }),

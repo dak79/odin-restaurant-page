@@ -1,8 +1,8 @@
-import header from './pages/header.js';
-import homePage from './pages/home.js';
-import aboutUs from './pages/about.js';
-import menu from './pages/menu.js';
-import contact from './pages/contact.js';
+import header from './components/header';
+import homePage from './components/home';
+import aboutUs from './components/about';
+import menu from './components/menu';
+import contact from './components/contact';
 import './styles/main.css';
 
 // First load
