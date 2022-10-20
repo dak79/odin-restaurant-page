@@ -1,40 +1,7 @@
-export const content = document.querySelector('#content');
-
-/**
- * Create a new element 
- * @param { Node } element 
- * @returns { Node } A new element
- */
-export const create = element => document.createElement(element);
-
-/**
- * Create a new element and add a class
- * @param { Node } element 
- * @param { String } className
- * @returns { Node } A new element with class
- */
- export const createAndClass = (element, className) => {
-    const el = document.createElement(element);
-    el.classList.add(className);
-
-    return el;
- }
-
-/**
- * Set multiple attributes to an elements
- * @param { Node } element - Element which needs multiple attributes.
- * @param { Objects } attributes - Object of attributes, attr name: attr value. 
- * @returns { Node } Elements with multiple attributes.
- */
-const setAttributes = (element, attributes) => Object.keys(attributes).forEach(attr => element.setAttribute(attr, attributes[attr]));
-
-/**
- * Append Children to a parent
- * @param { Node } parent - Parent Node
- * @param { Array } children - Children Nodes
- * @returns { Node } of children
- */
-export const appendChildren = (parent, children) => children.forEach(child => parent.appendChild(child));
+import { createAndClass } from './createAndClass';
+import { create } from './create';
+import { setAttributes } from './setAttributes';
+import { appendChildren } from './appendChildren';
 
 /**
  * Create a list
@@ -43,7 +10,7 @@ export const appendChildren = (parent, children) => children.forEach(child => pa
  * @param { String } className 
  * @returns { Node } An unordered list
  */
-export const createList = (itemTitles, itemsType, className) => {
+ export const createList = (itemTitles, itemsType, className) => {
     const list = createAndClass('ul', className);
 
     itemTitles.forEach(title => {
@@ -111,29 +78,3 @@ export const menuItems = (soup) => {
 
     return soupItem;
 }
-
-/**
- * Create frozen glass effect as background
- */
-export const frozenGlass  = () => { 
-    const hook = document.querySelector('#display-page');
-    const glass = createAndClass('div', 'frozen');
-    glass.setAttribute('id', 'frozen-glass');
-    
-    hook.appendChild(glass);
-}
-
-/**
- * Clean the display
- */
-export const cleanDisplay = () => {
-    const display = document.querySelector('#display-page');
-    display.replaceChildren();
-}
-/**
- * 
- * @param { URL } imgUrl 
- * @returns A new background image.
- */
-export const changeBgImg = imgUrl => document.body.style.backgroundImage = `url(${imgUrl})`;
-

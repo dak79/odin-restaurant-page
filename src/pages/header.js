@@ -1,4 +1,6 @@
-import { content, create, createList, appendChildren, headerButton } from '../helpers/DOMmanipulation.js';
+import { create } from '../helpers/create';
+import { createList, headerButton } from '../helpers/lists';
+import { appendChildren } from '../helpers/appendChildren';
 import '../styles/header.css';
 
 export default function header() {

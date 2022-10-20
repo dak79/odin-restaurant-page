@@ -1,4 +1,7 @@
-import { frozenGlass, cleanDisplay, createList, menuItems, changeBgImg } from "../helpers/DOMmanipulation.js";
+import { cleanDisplay } from '../helpers/cleanDisplay';
+import { frozenGlass } from '../helpers/frozenGlass';
+import { changeBgImg } from '../helpers/changeBg';
+import { createList, menuItems } from '../helpers/lists';
 import menuBgImage from '../assets/imgs/background/bg-menu.jpg'
 import '../styles/menu.css';
 

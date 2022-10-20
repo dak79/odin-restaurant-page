@@ -1,9 +1,9 @@
-import { createAndClass, frozenGlass , cleanDisplay, changeBgImg } from '../helpers/DOMmanipulation.js';
-import aboutBgImage from '../assets/imgs/background/bg-about.jpg'
-
-
+import { cleanDisplay } from '../helpers/cleanDisplay';
+import { frozenGlass } from '../helpers/frozenGlass';
+import { createAndClass } from '../helpers/createAndClass';
+import { changeBgImg } from '../helpers/changeBg';
+import aboutBgImage from '../assets/imgs/background/bg-about.jpg';
 import '../styles/aboutUs.css';
-
 
 export default function aboutUs() {
     
@@ -11,7 +11,6 @@ export default function aboutUs() {
     frozenGlass();
     changeBgImg(aboutBgImage);
 
-    
     const glass = document.querySelector('#frozen-glass');
     const aboutUsText = createAndClass('p', 'about-us-text');
 
@@ -23,6 +22,6 @@ export default function aboutUs() {
     Our dishes are a modern new interpretation of tarditional ones and many vegetarian and vegan choice are on our menu.
     
     If you prefere eating our soup at your place delivery service is available.
-    `
+    `;
     glass.appendChild(aboutUsText);
 }

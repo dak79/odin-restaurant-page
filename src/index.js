@@ -5,14 +5,11 @@ import menu from './pages/menu.js';
 import contact from './pages/contact.js';
 import './styles/main.css';
 
-
+// First load
 header();
 homePage();
 
-
-
-
-// loadpage for event handler
+// Event handlers
 document.querySelector('#btn-home').addEventListener('click', homePage);
 document.querySelector('#btn-about-us').addEventListener('click', aboutUs);
 document.querySelector('#btn-menu').addEventListener('click', menu);
