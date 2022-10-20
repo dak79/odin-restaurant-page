@@ -7,6 +7,7 @@ import './styles/main.css';
 
 
 header();
+homePage();
 
 
 

@@ -27,15 +27,15 @@
 }
 
 :root {
-    --header-color-hover: #FF9812;
-    --header-color: #E1E5E7;
+    --header-color-hover: #E1E5E7;
+    --header-color: #FF9812;
     --text-color: #000000;
 }
 
 body {
     height: 97vh;
     width: 99vw;
-    background: no-repeat center/cover url('../assets/imgs/background/background.jpg');
+    background: no-repeat center/cover;
 }
 
 main {

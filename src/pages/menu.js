@@ -1,10 +1,12 @@
-import { frozenGlass, cleanDisplay, createList, menuItems } from "../helpers/DOMmanipulation.js";
+import { frozenGlass, cleanDisplay, createList, menuItems, changeBgImg } from "../helpers/DOMmanipulation.js";
+import menuBgImage from '../assets/imgs/background/bg-menu.jpg'
 import '../styles/menu.css';
 
 export default function menu() {
 
     cleanDisplay();
     frozenGlass();
+    changeBgImg(menuBgImage);
     
     const glass = document.querySelector('#frozen-glass');
     const soupOnMenu = createList(

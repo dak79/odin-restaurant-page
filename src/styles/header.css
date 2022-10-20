@@ -17,5 +17,5 @@
 }
 
 .btn-menu:hover {
-    color: var(--header-color-hover);
+    opacity: 0.5;
 }

@@ -1,4 +1,6 @@
-import { createAndClass, frozenGlass , cleanDisplay } from '../helpers/DOMmanipulation.js';
+import { createAndClass, frozenGlass , cleanDisplay, changeBgImg } from '../helpers/DOMmanipulation.js';
+import aboutBgImage from '../assets/imgs/background/bg-about.jpg'
+
 
 import '../styles/aboutUs.css';
 
@@ -7,6 +9,8 @@ export default function aboutUs() {
     
     cleanDisplay();
     frozenGlass();
+    changeBgImg(aboutBgImage);
+
     
     const glass = document.querySelector('#frozen-glass');
     const aboutUsText = createAndClass('p', 'about-us-text');
@@ -19,8 +23,6 @@ export default function aboutUs() {
     Our dishes are a modern new interpretation of tarditional ones and many vegetarian and vegan choice are on our menu.
     
     If you prefere eating our soup at your place delivery service is available.
-    
-    Our prices are in Euro (€).
     `
     glass.appendChild(aboutUsText);
 }
