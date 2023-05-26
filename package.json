@@ -1,7 +1,7 @@
 {
   "name": "restaurant-page",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Live Preview [Restaurant Page](https://dak79.github.io/odin-restaurant-page/)",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
